@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="registerForm">
+    <div class="container mx-auto my-5 text-center">
+      <div class="group m-auto w-75 p-5">
+          <h1 class="text-info mb-4">Smart Login System</h1>
+          <input class="form-control mb-4" type="text" id="signName" placeholder="Enter Your Name">
+          <input class="form-control mb-4" type="text" id="signEmail" placeholder="Enter Your Email">
+          <input class="form-control mb-4" type="password" id="signPassword" placeholder="Enter Your Password">
+          <div class="alert alert-danger d-none" id="nameAlert"> At Least Two Characters Name</div>
+          <div class="alert alert-danger d-none" id="emailAlert"> Please Enter A valid Email</div>
+          <div class="alert alert-danger d-none" id="passwordAlert"> - At least 8 characters <br> - One Special Character <br> - One Upper Case at least </div>
+          <div class="alert alert-danger d-none" id="existAlert"> Email is Already Exist</div>
+          <div class="alert alert-success d-none" id="successAlert"> Success You Can Login</div>
+
+
+          <button id="submit" class="btn btn-outline-info w-100">Login</button>
+          <p class="text-white mt-3">Have an account?
+              <a class="text-white text-decoration-none" href="../Login/login.html">Sign In</a>
+          </p>
+      </div>
+  </div>
+
+</form>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>
+
+
+  
